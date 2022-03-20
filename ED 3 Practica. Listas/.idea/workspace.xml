@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7de84e7e-581c-45b7-b5a7-c357607bce19" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/Alumno.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/Evaluacion.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/GrupoAlumnos.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/IteradorListaCalificada.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/IteradorListaOrdinal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/ListaCalificada.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/ListaOrdinal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/NodoListaCalificada.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/NodoListaOrdinal.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/Pruebas.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IteradorListaOrdinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IteradorListaOrdinal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ListaOrdinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListaOrdinal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/NodoListaOrdinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodoListaOrdinal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pruebas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pruebas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,17 +60,11 @@
       <workItem from="1646813493278" duration="599000" />
       <workItem from="1646905752912" duration="1861000" />
       <workItem from="1647504827545" duration="600000" />
-      <workItem from="1647796785107" duration="2732000" />
+      <workItem from="1647796785107" duration="4123000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1645434531060">
-      <screen x="0" y="0" width="1366" height="728" />
-    </state>
-    <state x="534" y="256" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1366.728@0.0.1366.728" timestamp="1645434531060" />
   </component>
 </project>

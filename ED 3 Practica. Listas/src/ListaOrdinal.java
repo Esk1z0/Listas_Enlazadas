@@ -108,6 +108,19 @@ public class ListaOrdinal {
 	}
 
 	public int numConvocatorias(String nombreAsignatura) {
-		return 0; // Eliminar esta líne al codificar el método
+		int contador = -1;
+		NodoListaOrdinal actual = inicio;
+		while(actual != null){
+			if(actual.getDato().getNombreAsignatura().equals(nombreAsignatura)){
+				contador += 1;
+			}
+			actual = actual.getSiguiente();
+		}
+		if(contador < 0){
+			return contador;
+		}
+		else{
+			return contador + 1;
+		}
 	}
 }

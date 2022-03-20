@@ -13,10 +13,18 @@ public class Pruebas {
         listaOrdinal.insertar(cuatro);
         IteradorListaOrdinal it = listaOrdinal.getIterador();
         Evaluacion aux;
+        int numED;
+        int numAlgebra;
+        int numFP;
         while (it.hasNext()){
             aux = it.next();
             aux.mostrar();
         }
-
+        numED = listaOrdinal.numConvocatorias("ED");
+        numAlgebra = listaOrdinal.numConvocatorias("Algebra");
+        numFP = listaOrdinal.numConvocatorias("Fundamentos de Programacion");
+        System.out.println("Número de convocatorias de Estructura de Datos: " + numED);
+        System.out.println("Número de convocatorias de Álgebra :" + numAlgebra);
+        System.out.println("Número de convocatorias de Fundamentos de Programación :" + (numFP - 1));
     }
 }
