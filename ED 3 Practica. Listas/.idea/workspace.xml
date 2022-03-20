@@ -2,6 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7de84e7e-581c-45b7-b5a7-c357607bce19" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/Alumno.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/Evaluacion.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/GrupoAlumnos.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/IteradorListaCalificada.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/IteradorListaOrdinal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/ListaCalificada.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/ListaOrdinal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/NodoListaCalificada.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/NodoListaOrdinal.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/ED 3 Practica. Listas/Pruebas.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/IteradorListaOrdinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IteradorListaOrdinal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ListaOrdinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListaOrdinal.java" afterDir="false" />
@@ -27,6 +40,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -61,7 +75,7 @@
       <workItem from="1646813493278" duration="599000" />
       <workItem from="1646905752912" duration="1861000" />
       <workItem from="1647504827545" duration="600000" />
-      <workItem from="1647796785107" duration="2408000" />
+      <workItem from="1647796785107" duration="2732000" />
     </task>
     <servers />
   </component>
