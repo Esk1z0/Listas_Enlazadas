@@ -16,7 +16,7 @@ public class ListaOrdinal {
 	/**
 	 * Inserta el dato en la última posición de la lista
 	 */
-	public void insertar(int dato) {
+	public void insertar(Evaluacion dato) {
 		NodoListaOrdinal nuevo = new NodoListaOrdinal(dato, null);
 		if (this.vacia()) {
 			inicio = nuevo;
@@ -32,11 +32,11 @@ public class ListaOrdinal {
 	 * Busca el dato que ocupa la posición recibida como parámetro,
 	 * en caso de existir.
 	 */
-	public int getElemento(int posicion) {
+	public Evaluacion getElemento(int posicion) {
 		NodoListaOrdinal actual;
 		if ((posicion > numElementos - 1) || (posicion < 0)) {
 			System.out.println("No existe la posición " + posicion);
-			return -1;
+			return null;
 		} else {
 			actual = inicio;
 			for (int i = 0; i < posicion; i++) {
@@ -50,7 +50,7 @@ public class ListaOrdinal {
 	 * Borra el primer elemento de la lista cuyo dato coincide con el
 	 * parámetro recibido.
 	 */
-	public void borrar(int dato) {
+	public void borrar(Evaluacion dato) {
 		NodoListaOrdinal actual = inicio;
 		NodoListaOrdinal anterior = null;
 		boolean borrado = false;
@@ -78,7 +78,7 @@ public class ListaOrdinal {
 	 * en caso de existir. En caso contrario, devuelve -1
 	 */
 
-	public int posicion(int dato) {
+	public int posicion(Evaluacion dato) {
 		NodoListaOrdinal actual = inicio;
 		int pos = 0;
 		while (actual != null && actual.getDato() != dato) {
@@ -95,7 +95,7 @@ public class ListaOrdinal {
 	/**
 	 * Determina si el dato recibido como parámetro existe en la lista.
 	 */
-	public boolean contiene(int dato) {
+	public boolean contiene(Evaluacion dato) {
 		return this.posicion(dato) >= 0;
 	}
 
