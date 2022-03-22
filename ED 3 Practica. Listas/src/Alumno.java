@@ -78,11 +78,33 @@ public class Alumno {
 	}
 
 	public int getNumAprobadas() {
-		return 0;  // Eliminar esta línea al codificar el método
+		ListaOrdinal aprobadas = this.asignaturasAprobadas();
+		IteradorListaOrdinal it = aprobadas.getIterador();
+		int contador = 0;
+		while(it.hasNext()){
+			it.next();
+			contador += 1;
+		}
+		return contador;
 	}
 
 	public void mostrar() {
-
+		IteradorListaOrdinal it = expediente.getIterador();
+		Evaluacion auxEv = null;
+		double auxNota = 0.0;
+		int numEvaluaciones = 0;
+		int asigApro = 0;
+		System.out.println(nombre + " Matrícula: " + matricula);
+		if(!expediente.vacia()) {
+			while (it.hasNext()) {
+				auxEv = it.next();
+				String nota = "NP";
+				if (auxEv.getNota() > 0) nota = Double.toString(auxEv.getNota());
+				System.out.println("\t" + auxEv.getNombreAsignatura() + " " + auxEv.getConvocatoria() + ": " + nota);
+			}
+			System.out.println(expediente.getNumElementos() + " evaluaciones y " + this.getNumAprobadas() + " asignaturas aprobadas con calificación media " + this.mediaAprobadas());
+		}
+		else System.out.println("No ha realizado ninguna evaluación.");
 	}
 
 }
