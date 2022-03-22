@@ -44,7 +44,7 @@ public class Alumno {
 	}
 
 	public ListaOrdinal asignaturasAprobadas() {
-		ListaOrdinal aprobadas = null;
+		ListaOrdinal aprobadas = new ListaOrdinal();
 		Evaluacion aux = null;
 		IteradorListaOrdinal it = expediente.getIterador();
 		while(it.hasNext()){
@@ -100,7 +100,7 @@ public class Alumno {
 				auxEv = it.next();
 				String nota = "NP";
 				if (auxEv.getNota() > 0) nota = Double.toString(auxEv.getNota());
-				System.out.println("\t" + auxEv.getNombreAsignatura() + " " + auxEv.getConvocatoria() + ": " + nota);
+				System.out.println("\t" + auxEv.getNombreAsignatura() + " (" + auxEv.getConvocatoria() + "): " + nota);
 			}
 			System.out.println(expediente.getNumElementos() + " evaluaciones y " + this.getNumAprobadas() + " asignaturas aprobadas con calificación media " + this.mediaAprobadas());
 		}

@@ -26,5 +26,36 @@ public class Pruebas {
         System.out.println("Número de convocatorias de Estructura de Datos: " + numED);
         System.out.println("Número de convocatorias de Álgebra :" + numAlgebra);
         System.out.println("Número de convocatorias de Fundamentos de Programación :" + (numFP + 1));
+
+
+
+        Alumno a1 = new Alumno("Felipe García Gómez", 1253);
+        Alumno a2 = new Alumno("Alicia Blázquez Martín", 5622);
+        a1.nuevaEvaluacion(uno);
+        a1.nuevaEvaluacion(dos);
+        a1.nuevaEvaluacion(tres);
+        a1.nuevaEvaluacion(cuatro);
+        System.out.println(lineas() + "Asignaturas Aprobadas por " + a1.getNombre() + lineas());
+        ListaOrdinal aprobadas1 = a1.asignaturasAprobadas();
+        IteradorListaOrdinal it1 = aprobadas1.getIterador();
+        while(it1.hasNext()){
+            Evaluacion aux1 = it1.next();
+            System.out.println("\t" + aux1.getNombreAsignatura() + " (" + aux1.getConvocatoria() + "): " + aux1.getNota());
+        }
+        System.out.println(lineas() + "Asignaturas Aprobadas por " + a2.getNombre() + lineas());
+        ListaOrdinal aprobadas2 = a2.asignaturasAprobadas();
+        IteradorListaOrdinal it2 = aprobadas2.getIterador();
+        while(it2.hasNext()){
+            Evaluacion aux2 = it2.next();
+            System.out.println("\t" + aux2.getNombreAsignatura() + " (" + aux2.getConvocatoria() + "): " + aux2.getNota());
+        }
+        System.out.println(lineas() + "Mostrar Los Alumnos" + lineas());
+        a1.mostrar();
+        System.out.println(lineas() + lineas());
+        a2.mostrar();
+        System.out.println(lineas() + lineas());
+    }
+    public static String lineas(){
+        return "-----------";
     }
 }
