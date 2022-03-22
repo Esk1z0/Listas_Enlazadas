@@ -15,16 +15,16 @@ public class ListaCalificada {
 	/**
 	 * Inserta el alumno en la posición que le corresponde según la clave
 	 */
-	public void insertar(int clave, Alumno dato) {
+	public void insertar(Alumno dato) {
 		NodoListaCalificada anterior = null;
 		NodoListaCalificada actual = inicio;
-		while ((actual != null) && (actual.getClave() < clave)) {
+		while ((actual != null) && (actual.getClave() < dato.getMatricula())) {
 			anterior = actual;
 			actual = actual.getSiguiente();
 		}
-		if ((actual == null) || (actual.getClave() > clave)) {
+		if ((actual == null) || (actual.getClave() > dato.getMatricula())) {
 			// Insertar antes de actual
-			NodoListaCalificada nuevo = new NodoListaCalificada(clave, dato, actual);
+			NodoListaCalificada nuevo = new NodoListaCalificada(dato, actual);
 			if (actual == inicio) {  // insertar al principio de la lista
 				inicio = nuevo;
 			} else {
@@ -33,7 +33,7 @@ public class ListaCalificada {
 			numElementos++;
 		} else {
 			System.out.println(
-					"Clave duplicada (" + clave + "): no es posible insertar");
+					"Clave duplicada (" + dato.getMatricula() + "): no es posible insertar");
 		}
 	}
 
@@ -93,11 +93,48 @@ public class ListaCalificada {
 	}
 
 	public void borrarMenores(int clave) {
-
+		NodoListaCalificada actual = inicio;
+		while(actual != null && actual.getClave() < clave){
+			actual = actual.getSiguiente();
+		}
+		inicio = actual;
 	}
 
 	public void borrarMayores(int clave) {
+		NodoListaCalificada anterior = null;
+		NodoListaCalificada actual = inicio;
+		while(actual.getClave() < clave && actual != null){
+			anterior = actual;
+			actual = actual.getSiguiente();
+		}
+		if(actual == inicio){
+			inicio = null;
 
+		}
+		else if(actual.getClave() > clave){
+			anterior.setSiguiente(null);
+		}
+		else{
+			actual.setSiguiente(null);
+		}
 	}
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

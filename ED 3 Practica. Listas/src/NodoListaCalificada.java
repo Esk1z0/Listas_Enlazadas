@@ -1,11 +1,10 @@
 public class NodoListaCalificada {
 
-	private int clave;
+
 	private Alumno dato;
 	private NodoListaCalificada siguiente;
 
-	public NodoListaCalificada(int clave, Alumno dato, NodoListaCalificada siguiente) {
-		this.clave = clave;
+	public NodoListaCalificada(Alumno dato, NodoListaCalificada siguiente) {
 		this.dato = dato;
 		this.siguiente = siguiente;
 	}
@@ -27,6 +26,6 @@ public class NodoListaCalificada {
 	}
 
 	public int getClave() {
-		return clave;
+		return dato.getMatricula();
 	}
 }

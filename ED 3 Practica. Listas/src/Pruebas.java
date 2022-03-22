@@ -54,7 +54,70 @@ public class Pruebas {
         System.out.println(lineas() + lineas());
         a2.mostrar();
         System.out.println(lineas() + lineas());
+
+
+
+
+
+        Alumno pedro = new Alumno("Pedro Jiménez del Pozo", 8510);
+        Evaluacion fp = new Evaluacion("Fundamentos de Programación", "Enero 19", 8.8);
+        pedro.nuevaEvaluacion(fp);
+        ListaCalificada clase = new ListaCalificada();
+        clase.insertar(pedro);
+        clase.insertar(a1);
+        clase.insertar(a2);
+        Alumno auxiliar;
+        System.out.println(lineas() + " Alumnos En La Lista " + lineas());
+        IteradorListaCalificada itcal = clase.getIterador();
+        while(itcal.hasNext()){
+            auxiliar = itcal.next();
+            auxiliar.mostrar();
+            System.out.println(lineas() + lineas());
+        }
+
+
+        clase.borrarMenores(6000);
+        System.out.println(lineas() + " Borramos las claves menores a 6000 " + lineas());
+        IteradorListaCalificada itcal2 = clase.getIterador();
+        while(itcal2.hasNext()){
+            auxiliar = itcal2.next();
+            auxiliar.mostrar();
+            System.out.println(lineas() + lineas());
+        }
+        clase.borrarMenores(9000);
+        System.out.println(lineas() + " Borramos las claves menores a 9000 " + lineas());
+        IteradorListaCalificada itcal3 = clase.getIterador();
+        while(itcal3.hasNext()){
+            auxiliar = itcal3.next();
+            auxiliar.mostrar();
+            System.out.println(lineas() + lineas());
+        }
+        System.out.println(lineas() + " Metemos todos los alumnos y borramos las claves mayores a 7000 " + lineas());
+        clase.insertar(a1);
+        clase.insertar(a2);
+        clase.insertar(pedro);
+        clase.borrarMayores(7000);
+        IteradorListaCalificada itcal4 = clase.getIterador();
+        while(itcal4.hasNext()){
+            auxiliar = itcal4.next();
+            auxiliar.mostrar();
+            System.out.println(lineas() + lineas());
+        }
+        System.out.println(lineas() + " Borramos las claves mayores a 1000 " + lineas());
+        clase.borrarMayores(1000);
+        IteradorListaCalificada itcal5 = clase.getIterador();
+        while(itcal5.hasNext()){
+            auxiliar = itcal5.next();
+            auxiliar.mostrar();
+            System.out.println(lineas() + lineas());
+        }
     }
+
+
+
+
+
+
     public static String lineas(){
         return "-----------";
     }
