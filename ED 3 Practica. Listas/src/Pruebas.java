@@ -1,6 +1,7 @@
 public class Pruebas {
 
     public static void main(String[] args) {
+        System.out.println("Nombre: Juan Esteban Rincón Marín\nNúmero de Matrícula: BS0015\nGrupo: IWSIM12");
         System.out.println("********** PRUEBAS **********");
         Evaluacion uno = new Evaluacion("ED", "Junio 19", 4.5);
         Evaluacion dos = new Evaluacion("ED","Julio 19", -1);
@@ -56,6 +57,18 @@ public class Pruebas {
         System.out.println(lineas() + lineas());
 
 
+
+        Alumnobib edu = new Alumnobib("Eduardo Parra Martín", 8765);
+        Alumnobib soni = new Alumnobib("Sonia Torres Pardo", 2345);
+        edu.nuevaEvaluacion(uno);
+        edu.nuevaEvaluacion(dos);
+        edu.nuevaEvaluacion(tres);
+        edu.nuevaEvaluacion(cuatro);
+        System.out.println(lineas() + "MOSTRAR ALUMNOS BIBLIOTECA" + lineas());
+        edu.mostrar();
+        System.out.println(lineas() + lineas());
+        soni.mostrar();
+        System.out.println(lineas() + lineas());
 
 
 
