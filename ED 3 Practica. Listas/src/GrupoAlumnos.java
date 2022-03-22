@@ -17,18 +17,45 @@ public class GrupoAlumnos {
 	}
 
 	public void nuevoAlumno(Alumno alumno) {
-
+		listaAlumnos.insertar(alumno);
 	}
 
 	public int getNumAlumnos() {
-		return 0;  // Eliminar esta línea al codificar el método
+		int contador = 0;
+		IteradorListaCalificada it = listaAlumnos.getIterador();
+		while(it.hasNext()){
+			if(it.next() != null){
+				contador++;
+			}
+		}
+		return contador;
 	}
 
 	public Alumno getAlumno(int matricula) {
-		return null; // Eliminar esta línea al codificar el método
+		Alumno alumno = listaAlumnos.getElemento(matricula);
+		return alumno;
 	}
 
 	public double porcentajeAprobados(String nombreAsignatura) {
-		return 0.0;  // Eliminar esta línea al codificar el método
+		double porcentaje = 0;
+		if(listaAlumnos.vacia()){
+			porcentaje = 0.0;
+		}
+		else{
+			double total = 0;
+			double aprobados = 0;
+
+			IteradorListaCalificada it = listaAlumnos.getIterador();
+			Alumno aux = null;
+			while(it.hasNext()){
+				aux = it.next();
+				if(aux.estaAprobado(nombreAsignatura)){
+					aprobados ++;
+				}
+				total++;
+			}
+			porcentaje = (aprobados * 100)/total;
+		}
+		return porcentaje;
 	}
 }

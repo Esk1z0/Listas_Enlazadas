@@ -59,7 +59,7 @@ public class Pruebas {
 
 
 
-        Alumno pedro = new Alumno("Pedro Jiménez del Pozo", 8510);
+        Alumno pedro = new Alumno("Pedro Jiménez del Pozo", 8511);
         Evaluacion fp = new Evaluacion("Fundamentos de Programación", "Enero 19", 8.8);
         pedro.nuevaEvaluacion(fp);
         ListaCalificada clase = new ListaCalificada();
@@ -111,6 +111,22 @@ public class Pruebas {
             auxiliar.mostrar();
             System.out.println(lineas() + lineas());
         }
+
+
+
+
+
+        GrupoAlumnos g11 = new GrupoAlumnos("GX11");
+        g11.nuevoAlumno(a1);
+        g11.nuevoAlumno(a2);
+        g11.nuevoAlumno(pedro);
+        System.out.println(lineas() + "CREADO EL GRUPO GX11" + lineas());
+        System.out.println("El grupo GX11 tiene " + g11.getNumAlumnos() + " alumnos");
+        System.out.println(lineas() + "GRUPO GX11. ALUMNOS CON MATRÍCULA 8510" + lineas());
+        Alumno auxiliar1 = g11.getAlumno(8511);
+        auxiliar1.mostrar();
+        System.out.println(lineas() + lineas());
+        System.out.println("porcentaje de aprobados en ED el grupo  GX11: " + g11.porcentajeAprobados("ED"));
     }
 
 
