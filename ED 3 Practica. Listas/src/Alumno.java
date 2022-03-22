@@ -57,7 +57,24 @@ public class Alumno {
 	}
 
 	public double mediaAprobadas() {
-		return 0.0;  // Eliminar esta línea al codificar el método
+		double media = 0.0;
+		ListaOrdinal notas = this.asignaturasAprobadas();
+		IteradorListaOrdinal it = notas.getIterador();
+		int contador = 0;
+		double sumatorio = 0.0;
+		Evaluacion aux = null;
+		while(it.hasNext()){
+			contador += 1;
+			aux = it.next();
+			sumatorio += aux.getNota();
+		}
+		if(contador == 0){
+			return 0.0;
+		}
+		else{
+			media = sumatorio / contador;
+		}
+		return media;
 	}
 
 	public int getNumAprobadas() {
