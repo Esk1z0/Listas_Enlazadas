@@ -44,7 +44,16 @@ public class Alumno {
 	}
 
 	public ListaOrdinal asignaturasAprobadas() {
-		return null;  // Eliminar esta línea al codificar el método
+		ListaOrdinal aprobadas = null;
+		Evaluacion aux = null;
+		IteradorListaOrdinal it = expediente.getIterador();
+		while(it.hasNext()){
+			aux = it.next();
+			if(aux.getNota() >= 5){
+				aprobadas.insertar(aux);
+			}
+		}
+		return aprobadas;
 	}
 
 	public double mediaAprobadas() {

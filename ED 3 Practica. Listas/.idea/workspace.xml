@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7de84e7e-581c-45b7-b5a7-c357607bce19" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListaOrdinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListaOrdinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Alumno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alumno.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Pruebas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pruebas.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -60,11 +60,23 @@
       <workItem from="1646813493278" duration="599000" />
       <workItem from="1646905752912" duration="1861000" />
       <workItem from="1647504827545" duration="600000" />
-      <workItem from="1647796785107" duration="4123000" />
+      <workItem from="1647796785107" duration="4886000" />
+      <workItem from="1647945809432" duration="1518000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
