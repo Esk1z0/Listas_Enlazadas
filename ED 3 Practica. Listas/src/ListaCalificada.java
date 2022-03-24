@@ -94,29 +94,32 @@ public class ListaCalificada {
 
 	public void borrarMenores(int clave) {
 		NodoListaCalificada actual = inicio;
+		int contador = 0;
 		while(actual != null && actual.getClave() < clave){
 			actual = actual.getSiguiente();
+			contador ++;
 		}
 		inicio = actual;
+		numElementos = numElementos - contador;
 	}
 
 	public void borrarMayores(int clave) {
 		NodoListaCalificada anterior = null;
 		NodoListaCalificada actual = inicio;
-		while(actual.getClave() < clave && actual != null){
+		int contador = 0;
+		while(actual.getClave() <= clave && actual != null){
 			anterior = actual;
 			actual = actual.getSiguiente();
+			contador += 1;
 		}
 		if(actual == inicio){
 			inicio = null;
 
 		}
-		else if(actual.getClave() > clave){
+		else{
 			anterior.setSiguiente(null);
 		}
-		else{
-			actual.setSiguiente(null);
-		}
+		numElementos = contador;
 	}
 
 }

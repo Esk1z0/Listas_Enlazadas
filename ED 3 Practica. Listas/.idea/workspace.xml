@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7de84e7e-581c-45b7-b5a7-c357607bce19" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/Alumnobib.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Alumnobib.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Pruebas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Pruebas.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,7 +22,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -60,7 +59,8 @@
       <workItem from="1646905752912" duration="1861000" />
       <workItem from="1647504827545" duration="600000" />
       <workItem from="1647796785107" duration="4886000" />
-      <workItem from="1647945809432" duration="16817000" />
+      <workItem from="1647945809432" duration="17177000" />
+      <workItem from="1648058334287" duration="77000" />
     </task>
     <servers />
   </component>
@@ -77,5 +77,6 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>
